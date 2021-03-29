@@ -58,13 +58,13 @@ class Search extends Component
         //dd($this->jobs);
     }
 
-    /*
-    public function showJob()
+    
+    public function showVid()
     {
         if ($this->videos->isNotEmpty()) {
-            return redirect()->route('jobs.show', [$this->jobs[$this->selectedIndex]['id']]);
+            return redirect()->route('showvideo', [$this->videos[$this->selectedIndex]['id']]);
         }
-    }*/
+    }
 
     public function style()
     {

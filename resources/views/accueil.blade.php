@@ -62,16 +62,17 @@
         <header class="text-gray-600 body-font">
             <div class="container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row">
               <nav class="flex flex-wrap items-center text-base lg:w-2/5 md:ml-auto">
-                <a class="mr-5 hover:text-gray-900">First Link</a>
-                <a class="mr-5 hover:text-gray-900">Second Link</a>
-                <a class="mr-5 hover:text-gray-900">Third Link</a>
-                <a class="hover:text-gray-900">Fourth Link</a>
+                <a href="{{ route('accueil') }}" class="mr-5 hover:text-gray-900">Accueil</a>
+                <a class="mr-5 hover:text-gray-900">Contact</a>
+                <a class="mr-5 hover:text-gray-900">A propos</a>
               </nav>
               <a class="flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-1/5 title-font lg:items-center lg:justify-center md:mb-0">
+                <img class="h-20" src="pictures/logo.png" alt="logo">
+                <!--
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 p-2 text-white bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">Tailblocks</span>
+                </svg>-->
+                <span class="ml-3 text-xl">iVideos</span>
               </a>
               <div class="inline-flex ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
                 <button class="inline-flex items-center px-3 py-1 mt-4 text-base bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200 md:mt-0">Button

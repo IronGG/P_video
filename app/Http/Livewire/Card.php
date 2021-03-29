@@ -14,7 +14,7 @@ class Card extends Component
 
     public function loadCardData()
     {
-        sleep(2);
+        //sleep(2);
         $this->videos = Video::all();
         //$this->mavartest = $video;
         

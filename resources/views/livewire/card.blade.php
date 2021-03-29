@@ -5,18 +5,22 @@
     @isset($videos)
         @foreach ($videos as $video)
         <div class="p-4 xl:w-1/4 md:w-1/2">
-            <div class="p-6 bg-gray-100 rounded-lg">
-                <iframe class="w-full"" id="inlineFrameExample"
-                    title="Inline Frame Example"
-                    height="160"
-                    src="/videos/{{ $video->path }}">
-                    <img src="/videos/20494859.jpg" alt="miniature">
-                </iframe>
-                <h3 class="mt-6 text-xs font-medium tracking-widest text-indigo-500 title-font">SUBTITLE</h3>
-                <h2 class="mb-4 text-lg font-medium text-gray-900 title-font">{{ $video->name }}</h2>
-                <p class="h-20 text-base leading-relaxed">{{ $video->description }}</p>
+            <a href="/vid/{{ $video->id }}">
+                <div class="p-6 bg-gray-100 rounded-lg">
+                    <!--
+                    <iframe class="w-full"" id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        height="160"
+                        src="/videos/{{ $video->path }}">
+                        <img src="/videos/20494859.jpg" alt="miniature">
+                    </iframe>-->
+                    <img class="object-cover object-center w-full h-40 mb-6 rounded" src="/pictures/{{ $video->name }}.png" alt="miniature">
+                    <h3 class="mt-6 text-xs font-medium tracking-widest text-indigo-500 title-font">SUBTITLE</h3>
+                    <h2 class="mb-4 text-lg font-medium text-gray-900 truncate title-font ">{{ $video->name }}</h2>
+                    <p class="h-20 text-base leading-relaxed">{{ $video->description }}</p>
+                </div>
+            </a>
             </div>
-        </div>
         <!--
             <div class="p-4 xl:w-1/4 md:w-1/2">
                 <div class="p-6 bg-gray-100 rounded-lg">

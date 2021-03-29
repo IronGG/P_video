@@ -15,15 +15,13 @@ use App\Http\Controllers\VideoController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/lara', function () {
     return view('welcome');
 });
 
-Route::get('/accueil', [VideoController::class, 'show']);
+Route::get('/', [VideoController::class, 'show'])->name('accueil');
 
-Route::get('/vid', function () {
-    return view('videodetail');
-});
+Route::get('/vid/{id}', [VideoController::class, 'showOne'])->name('showvideo');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
